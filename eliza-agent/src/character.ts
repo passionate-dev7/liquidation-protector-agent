@@ -1,10 +1,13 @@
 import { Character, Clients, defaultCharacter, ModelProviderName } from "@elizaos/core";
 import getGiftPlugin from "./custom-plugins/index.ts";
+import { compassPlugin } from "@elizaos-plugins/plugin-compass";
+import { edwinPlugin } from "@elizaos/plugin-edwin";
+import { zapperPlugin } from "./plugin-zapper/src/index.ts";
 
 export const character: Character = {
     ...defaultCharacter,
-    // name: "Eliza",
-    plugins: [getGiftPlugin],
+    name: "Liquidation Protector Agent",
+    plugins: [compassPlugin, edwinPlugin, zapperPlugin],
     clients: [],
     modelProvider: ModelProviderName.GOOGLE,
     settings: {
@@ -19,6 +22,7 @@ export const character: Character = {
             // COMPASS_ETHEREUM_RPC_URL: "your_ethereum_rpc_url_here", 
             // COMPASS_BASE_RPC_URL: "your_base_rpc_url_here",
         },
+        model: "gemini-2.0-flash-exp",
         voice: {
             model: "en_US-hfc_female-medium",
         },
