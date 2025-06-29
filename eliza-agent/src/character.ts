@@ -7,7 +7,7 @@ import { zapperPlugin } from "./plugin-zapper/src/index.ts";
 export const character: Character = {
     ...defaultCharacter,
     name: "Liquidation Protector Agent",
-    plugins: [compassPlugin, edwinPlugin, zapperPlugin],
+    plugins: [getGiftPlugin, zapperPlugin, compassPlugin as any , edwinPlugin as any], // Type assertion to bypass version compatibility
     clients: [],
     modelProvider: ModelProviderName.GOOGLE,
     settings: {
@@ -22,7 +22,7 @@ export const character: Character = {
             // COMPASS_ETHEREUM_RPC_URL: "your_ethereum_rpc_url_here", 
             // COMPASS_BASE_RPC_URL: "your_base_rpc_url_here",
         },
-        model: "gemini-2.0-flash-exp",
+        model: "gemini-2.0-flash",
         voice: {
             model: "en_US-hfc_female-medium",
         },

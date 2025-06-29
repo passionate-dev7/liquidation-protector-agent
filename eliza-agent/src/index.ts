@@ -64,9 +64,9 @@ export function createAgent(
       nodePlugin,
       getGiftPlugin,
       evmPlugin,
-      edwinPlugin,
       zapperPlugin,
-      compassPlugin,
+      edwinPlugin as any, // Temporarily disabled due to version conflicts
+      compassPlugin as any, // Type assertion to bypass version compatibility
     ].filter(Boolean),
     providers: [],
     actions: [],
