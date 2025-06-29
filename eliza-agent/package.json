@@ -11,6 +11,7 @@
     "stop:service:all": "pm2 stop all"
   },
   "dependencies": {
+    "@elizaos-plugins/plugin-compass": "github:CompassLabs/plugin-compass",
     "@chainlink/functions-toolkit": "^0.3.2",
     "@elizaos/adapter-postgres": "0.1.7",
     "@elizaos/adapter-sqlite": "0.1.7",
@@ -18,6 +19,7 @@
     "@elizaos/client-direct": "0.1.7",
     "@elizaos/core": "0.1.7",
     "@elizaos/plugin-bootstrap": "0.1.7",
+    "@elizaos/plugin-edwin": "^0.25.6-alpha.1",
     "@elizaos/plugin-evm": "^0.1.8",
     "@elizaos/plugin-image-generation": "0.1.7",
     "@elizaos/plugin-node": "0.1.7",

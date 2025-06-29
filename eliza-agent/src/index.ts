@@ -11,6 +11,8 @@ import { zapperPlugin } from "./plugin-zapper/src/index.ts";
 import { createNodePlugin } from "@elizaos/plugin-node";
 import { getGiftPlugin } from "./custom-plugins/index.ts";
 import { evmPlugin } from "@elizaos/plugin-evm";
+import { compassPlugin } from "@elizaos-plugins/plugin-compass";
+import { edwinPlugin } from "@elizaos/plugin-edwin";
 import fs from "fs";
 import net from "net";
 import path from "path";
@@ -62,6 +64,9 @@ export function createAgent(
       nodePlugin,
       getGiftPlugin,
       evmPlugin,
+      edwinPlugin,
+      zapperPlugin,
+      compassPlugin,
     ].filter(Boolean),
     providers: [],
     actions: [],
