@@ -9,9 +9,11 @@ import {
     type Memory,
     type State,
 } from "@elizaos/core";
-import examples from "./examples";
-import { formatPortfolioData, getZapperHeaders } from "../../utils";
-import { validateZapperConfig } from "../../environment";
+import examples from "./examples.js";
+import { formatPortfolioData, getZapperHeaders } from "../../utils.js";
+import { validateZapperConfig } from "../../environment.js";
+
+
 export const portfolioAction: Action = {
     name: "ZAPPER_PORTFOLIO",
     description: "Get the portfolio from given address or addresses",

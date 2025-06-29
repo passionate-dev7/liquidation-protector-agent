@@ -1,5 +1,5 @@
-import { ZapperPortfolioResponse, ZapperFarcasterResponse } from "./types";
-import { ZapperConfig } from './environment';
+import { ZapperPortfolioResponse, ZapperFarcasterResponse } from "./types.js";
+import { ZapperConfig } from './environment.js';
 
 export function getZapperHeaders(config: ZapperConfig) {
     const encodedKey = btoa(config.ZAPPER_API_KEY);

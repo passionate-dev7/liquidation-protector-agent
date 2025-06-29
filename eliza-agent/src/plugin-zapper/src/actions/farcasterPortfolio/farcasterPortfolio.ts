@@ -9,9 +9,9 @@ import {
     type Memory,
     type State,
 } from "@elizaos/core";
-import examples from "./examples";
-import { formatFarcasterData, getZapperHeaders } from "../../utils";
-import { validateZapperConfig } from "../../environment";
+import examples from "./examples.js";
+import { formatFarcasterData, getZapperHeaders } from "../../utils.js";
+import { validateZapperConfig } from "../../environment.js";
 
 export const farcasterPortfolioAction: Action = {
     name: "FARCASTER_PORTFOLIO",
