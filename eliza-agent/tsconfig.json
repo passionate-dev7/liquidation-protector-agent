@@ -20,6 +20,15 @@
     "noEmitOnError": false,
     "moduleDetection": "force",
     "allowArbitraryExtensions": true,
-    "strictPropertyInitialization": false,
-  }
+    "strictPropertyInitialization": false
+  },
+  "exclude": [
+    "**/__tests__/**/*",
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    "**/vitest.config.ts",
+    "**/test/**/*",
+    "dist/**/*",
+    "node_modules"
+  ]
 }

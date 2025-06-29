@@ -7,6 +7,7 @@ import {
   type Character,
 } from "@elizaos/core";
 import { bootstrapPlugin } from "@elizaos/plugin-bootstrap";
+import { zapperPlugin } from "./plugin-zapper/src/index.ts";
 import { createNodePlugin } from "@elizaos/plugin-node";
 import { getGiftPlugin } from "./custom-plugins/index.ts";
 import { evmPlugin } from "@elizaos/plugin-evm";
